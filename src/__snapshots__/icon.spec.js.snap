@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Icon with core props 1`] = `
+<svg
+  style="width: 100px; height: 100px; margin: 10px;"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"
+    fill="#fff"
+  />
+</svg>
+`;
+
+exports[`Render Icon with invalid icon 1`] = `
+<svg
+  style="width: 24px; height: 24px; margin: 0px;"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
+    fill="#00222b"
+  />
+</svg>
+`;
+
+exports[`Render default Icon tag and styles 1`] = `
+<svg
+  style="width: 24px; height: 24px; margin: 0px;"
+  viewBox="0 0 24 24"
+>
+  <path
+    d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z"
+    fill="#00222b"
+  />
+</svg>
+`;
