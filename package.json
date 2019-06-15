@@ -1,6 +1,6 @@
 {
   "name": "@salo/icons",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React based SVG icons",
   "main": "./index.js",
   "sideEffects": false,
