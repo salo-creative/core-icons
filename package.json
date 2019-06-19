@@ -1,6 +1,6 @@
 {
   "name": "@salo/icons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React based SVG icons",
   "main": "./index.js",
   "sideEffects": false,
@@ -58,6 +58,7 @@
   "devDependencies": {
     "@babel/runtime": "^7.4.2",
     "@jamesbliss/storybook-state": "^0.0.1",
+    "@salo/core-ui": "^0.0.6",
     "@storybook/addon-actions": "^5.0.3",
     "@storybook/addon-info": "^5.0.3",
     "@storybook/addon-jest": "^5.0.3",
