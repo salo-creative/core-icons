@@ -73,6 +73,7 @@ export const icons = {
 
 export default class Icon extends React.Component {
   render() {
+    console.log('tests');
     const { size, fill, margin, icon } = this.props;
     return (
       <svg style={ { width: size, height: size, margin } } viewBox='0 0 24 24'>
