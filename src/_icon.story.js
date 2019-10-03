@@ -9,7 +9,8 @@ import { colours, P, Column, Row } from '@salo/core-ui';
 import results from '../.storybook/jest-test-results.json';
 
 // FEATURED COMPONENT
-import Icon, { icons } from './icon';
+import Icon from './icon';
+import icons from './icons';
 
 // README //
 import README from './README.md';
