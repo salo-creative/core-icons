@@ -72,6 +72,7 @@ export const icons = {
 };
 
 const Icon = ({
+  className,
   size,
   fill,
   margin,
@@ -79,6 +80,7 @@ const Icon = ({
   vAlign
 }) => (
   <svg
+    className={ className }
     style={ {
       width: size,
       height: size,
@@ -92,6 +94,7 @@ const Icon = ({
 );
 
 Icon.defaultProps = {
+  className: null,
   size: 24,
   fill: '#00222b',
   icon: 'dashboard',
@@ -100,6 +103,7 @@ Icon.defaultProps = {
 };
 
 Icon.propTypes = {
+  className: PropTypes.string,
   size: PropTypes.number,
   fill: PropTypes.string,
   icon: PropTypes.string,
