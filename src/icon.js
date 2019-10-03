@@ -71,27 +71,40 @@ export const icons = {
   users: 'M12,6A3,3 0 0,0 9,9A3,3 0 0,0 12,12A3,3 0 0,0 15,9A3,3 0 0,0 12,6M6,8.17A2.5,2.5 0 0,0 3.5,10.67A2.5,2.5 0 0,0 6,13.17C6.88,13.17 7.65,12.71 8.09,12.03C7.42,11.18 7,10.15 7,9C7,8.8 7,8.6 7.04,8.4C6.72,8.25 6.37,8.17 6,8.17M18,8.17C17.63,8.17 17.28,8.25 16.96,8.4C17,8.6 17,8.8 17,9C17,10.15 16.58,11.18 15.91,12.03C16.35,12.71 17.12,13.17 18,13.17A2.5,2.5 0 0,0 20.5,10.67A2.5,2.5 0 0,0 18,8.17M12,14C10,14 6,15 6,17V19H18V17C18,15 14,14 12,14M4.67,14.97C3,15.26 1,16.04 1,17.33V19H4V17C4,16.22 4.29,15.53 4.67,14.97M19.33,14.97C19.71,15.53 20,16.22 20,17V19H23V17.33C23,16.04 21,15.26 19.33,14.97Z'
 };
 
-export default class Icon extends React.Component {
-  render() {
-    const { size, fill, margin, icon } = this.props;
-    return (
-      <svg style={ { width: size, height: size, margin } } viewBox='0 0 24 24'>
-        <path fill={ fill } d={ get(icons, `${ icon }`, 'M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z') } />
-      </svg>
-    );
-  }
-}
+const Icon = ({
+  size,
+  fill,
+  margin,
+  icon,
+  vAlign
+}) => (
+  <svg
+    style={ {
+      width: size,
+      height: size,
+      margin,
+      verticalAlign: vAlign
+    } }
+    viewBox='0 0 24 24'
+  >
+    <path fill={ fill } d={ get(icons, `${ icon }`, 'M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z') } />
+  </svg>
+);
 
 Icon.defaultProps = {
   size: 24,
   fill: '#00222b',
   icon: 'dashboard',
-  margin: '0'
+  margin: '0',
+  vAlign: null
 };
 
 Icon.propTypes = {
   size: PropTypes.number,
   fill: PropTypes.string,
   icon: PropTypes.string,
-  margin: PropTypes.string
+  margin: PropTypes.string,
+  vAlign: PropTypes.string
 };
+
+export default Icon;
