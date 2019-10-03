@@ -1,8 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Render Icon with core props 1`] = `
+.c0 {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
 <svg
-  style="width: 100px; height: 100px; margin: 10px;"
+  class="c0"
+  size="100"
   viewBox="0 0 24 24"
 >
   <path
@@ -13,8 +20,15 @@ exports[`Render Icon with core props 1`] = `
 `;
 
 exports[`Render Icon with invalid icon 1`] = `
+.c0 {
+  height: 24px;
+  width: 24px;
+  margin: 0;
+}
+
 <svg
-  style="width: 24px; height: 24px; margin: 0px;"
+  class="c0"
+  size="24"
   viewBox="0 0 24 24"
 >
   <path
@@ -25,8 +39,15 @@ exports[`Render Icon with invalid icon 1`] = `
 `;
 
 exports[`Render default Icon tag and styles 1`] = `
+.c0 {
+  height: 24px;
+  width: 24px;
+  margin: 0;
+}
+
 <svg
-  style="width: 24px; height: 24px; margin: 0px;"
+  class="c0"
+  size="24"
   viewBox="0 0 24 24"
 >
   <path
