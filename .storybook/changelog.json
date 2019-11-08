@@ -1,4 +1,5 @@
 [
+{ "user": "Rich Comber", "version": "v1.0.11", "commit": "Adding flag icon" },
 { "user": "Rich Comber", "version": "v1.0.10", "commit": "adding lock_reset icon" },
 { "user": "Rich Comber", "version": "v1.0.9", "commit": "Adding earth icon" },
 { "user": "Rich Comber", "version": "v1.0.7", "commit": "Refactor to styled component" },
