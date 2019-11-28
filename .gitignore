@@ -5,6 +5,8 @@ bower_components
 
 .DS_STORE
 node_modules
+build
+dist
 .module-cache
 *.log*
 _nogit
@@ -70,22 +72,8 @@ Thumbs.db
 *.swp
 
 jest-test-results.json
-!src/Atoms/icons
+!src/atoms/icons
 .out
 
-#BUILD
-build
-dist
-atoms
-forms
-global
-helpers
-molecules
-typography
-
-!src/atoms
-!src/forms
-!src/global
-!src/helpers
-!src/molecules
-!src/typography
+# DEV data #
+locations.json
