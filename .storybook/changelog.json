@@ -1,4 +1,5 @@
 [
+{ "user": "Tim Stone", "version": "v1.1.3", "commit": "Upgraded packages" },
 { "user": "Tim Stone", "version": "v1.1.2", "commit": "Added forum icon" },
 { "user": "Tim Stone", "version": "v1.1.1", "commit": "Added info icon" },
 { "user": "Rich Comber", "version": "v1.1.0", "commit": "Updating CI process" },
