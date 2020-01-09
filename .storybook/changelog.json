@@ -1,4 +1,5 @@
 [
+{ "user": "Rich Comber", "version": "v1.1.6", "commit": "Adding github icon" },
 { "user": "Rich Comber", "version": "v1.1.5", "commit": "Adding account_edit icon" },
 { "user": "Rich Comber", "version": "v1.1.4", "commit": "Adding new icons for salo admin" },
 { "user": "Tim Stone", "version": "v1.1.3", "commit": "Upgraded packages" },
