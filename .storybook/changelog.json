@@ -1,4 +1,5 @@
 [
+{ "user": "Rich Comber", "version": "v1.1.17", "commit": "Adding new CI setup" },
 { "user": "Rich Comber", "version": "v1.1.16", "commit": "Adding alert_circle_outline icon" },
 { "user": "Rich Comber", "version": "v1.1.15", "commit": "Adding account lock icons" },
 { "user": "Rich Comber", "version": "v1.1.14", "commit": "Adding delete outlineicon" },
