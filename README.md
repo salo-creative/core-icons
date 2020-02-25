@@ -31,5 +31,5 @@ Implement as follows
 1. Create a feature branch from master
 2. Open a PR from your feature back to master
 3. When you are ready to release the library checkout master and pull down the latest code.
-4. run `yarn release:prep` locally to add changelog and increment version number and then push directly to master to trigger publish action
+4. run `yarn release` locally to add changelog and increment version number and then push directly to master to trigger publish action
 5. If you want to deploy to GitHub pages then run `yarn release:ghp`. This should only be run from master so not before a PR is merged
