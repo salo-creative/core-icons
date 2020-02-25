@@ -1,5 +1,8 @@
 # Icon
 
+![Publish](https://github.com/salo-creative/core-icons/workflows/Publish/badge.svg)
+![Development](https://github.com/salo-creative/core-icons/workflows/Development/badge.svg)
+
 Icon renders a standard `<svg>` with themed styling. It has a range of pre-defined icons to choose from. These have been normalised to work in a square viewport for consistent render
 
 -------
