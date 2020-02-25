@@ -1,9 +1,9 @@
-name: Development
+name: Publish
 
 on: 
-  pull_request:
-    branches:
-      - master
+  push:
+    tags:
+      - v[12].[0-9]+.[0-9]+
 
 jobs:
   test:
@@ -19,6 +19,11 @@ jobs:
       - run: yarn
       - run: yarn test
       - run: yarn bundle
+      - run: npm install -g npm-cli-login
+      - run: npm-cli-login -u "${{ secrets.NPM_USER }}" -p "${{ secrets.NPM_PASSWORD }}" -e "${{ secrets.NPM_EMAIL }}"
+      - run: cp -rf .npmignore package.json ./dist
+      - run: cd ./dist
+      - run: npm publish
       
       - name: Notify
         uses: rtCamp/action-slack-notify@v2.0.0
@@ -26,4 +31,4 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           SLACK_USERNAME: Salo Creative
           SLACK_ICON: https://res.cloudinary.com/salo-cms-dev/image/upload/v1578149536/salo-admin/projects/synj7hxqobscnaun2yah.png
-          SLACK_MESSAGE: ':raised_hands: @salo/icons tests passed'
+          SLACK_MESSAGE: ':tada: @salo/icons successfully published!'
