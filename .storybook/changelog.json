@@ -1,4 +1,5 @@
 [
+{ "user": "Rich Comber", "version": "v1.3.0", "commit": "Adding trending icons" },
 { "user": "Rich Comber", "version": "v1.2.0", "commit": "Fix pipeline" },
 { "user": "Rich Comber", "version": "v1.1.18", "commit": "Testing updates to CI" },
 { "user": "Rich Comber", "version": "v1.1.17", "commit": "Adding new CI setup" },
