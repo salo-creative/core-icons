@@ -27,6 +27,13 @@ Implement as follows
 <Icon icon='dashboard' />
 ```
 
+If you are using it without supporting text (e.g. a button with just the icon) then add `standAlone` and consider adding a `title`.
+
+```javascript
+<Icon icon='dashboard' title='Home' standAlone />
+```
+
+
 **For full prop types and usage see storybook info/knobs**
 
 # Publishing

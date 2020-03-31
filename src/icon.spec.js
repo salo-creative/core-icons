@@ -45,3 +45,56 @@ test('Render Icon with invalid icon', async () => {
   expect(path).toHaveAttribute('d', 'M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z');
   expect(container.firstChild).toMatchSnapshot();
 });
+
+test('Render Icon with a title', async () => {
+  // Arrange
+  const title = 'Hello title';
+  // Render
+  const { container } = renderWithTheme(
+    <Icon icon='foobarbaz' title={ title } />
+  );
+  const titleEl = container.querySelector('title');
+
+  // Assert
+  expect(titleEl.innerHTML).toBe(title);
+  expect(container.firstChild).toMatchSnapshot();
+});
+
+test('Render Icon with correct attributes if decorative', async () => {
+  // Render
+  const { container } = renderWithTheme(
+    <Icon icon='pencil' />
+  );
+  
+  // Assert
+  const svg = container.firstChild;
+  expect(svg).toHaveAttribute('aria-hidden', 'true');
+  expect(svg).not.toHaveAttribute('role', 'img');
+  expect(svg).toMatchSnapshot();
+});
+
+test('Render Icon with correct attributes if not decorative', async () => {
+  // Render
+  const { container } = renderWithTheme(
+    <Icon icon='pencil' standAlone />
+  );
+  
+  // Assert
+  const svg = container.firstChild;
+  expect(svg).not.toHaveAttribute('aria-hidden', 'true');
+  expect(svg).toHaveAttribute('role', 'img');
+  expect(svg).toMatchSnapshot();
+});
+
+// This test and attribute can be removed when we drop IE 11.
+test('Render Icon with focusable attribute', async () => {
+  // Render
+  const { container } = renderWithTheme(
+    <Icon icon='pencil' />
+  );
+  
+  // Assert
+  const svg = container.firstChild;
+  expect(svg).toHaveAttribute('focusable', 'false');
+  expect(svg).toMatchSnapshot();
+});
