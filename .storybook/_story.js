@@ -27,8 +27,7 @@ const StyledH1 = styled(H1)`
   padding: 25px;
 `;
 
-export const stories = storiesOf('UI', module);
-stories.add('Changelog', () => {
+export const Changelog = () => {
   const users = {};
   changes.forEach((change) => {
     if (users[change.user] !== undefined) {
@@ -64,9 +63,17 @@ stories.add('Changelog', () => {
       </Wrapper>
     </React.Fragment>
   )
-}, {
-  info: {
-    disable: true
+};
+
+Changelog.story = {
+  parameters: {
+    info: {
+      disable: true,
+    },
+    options: { showPanel: false },
   },
-  options: { showPanel: false }
-})
+};
+
+export default {
+  title: 'Meta'
+};

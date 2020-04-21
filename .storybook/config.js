@@ -1,46 +1,19 @@
 import React from 'react';
-import { configure, addDecorator, setAddon } from '@storybook/react';
-import infoAddon, { withInfo } from '@storybook/addon-info';
-import { withOptions } from '@storybook/addon-options';
+import { configure, addDecorator } from '@storybook/react';
 import { GlobalStyles, Normalise, Theme } from '@salo/core-ui';
+import { addParameters } from '@storybook/react';
 
 // COMPONENTS
 import './storybook.scss';
 
-addDecorator(
-  withOptions({
+addParameters({
+  options: {
     brandTitle: 'Icons',
-    hierarchyRootSeparator: /\|/,
     brandUrl: 'https://github.com/SaloCreative/icons',
     showPanel: true,
     panelPosition: 'right'
-  })
-)
-
-addDecorator(withInfo({
-  inline: true,
-  maxPropsIntoLine: 1,
-  maxPropObjectKeys: 10,
-  maxPropArrayLength: 10,
-  maxPropStringLength: 100,
-  styles: {
-    infoBody: {
-      border: 'none',
-      borderRadius: 0,
-      boxShadow: 'none',
-      padding: '0 20px',
-      margin: 0
-    },
-    infoStory: {
-      padding: '40px 20px'
-    }
-  },
-  components: {
-    p({ children }) {
-      return <p>{children}</p>;
-    },
   }
-}))
+});
 
 addDecorator(story => {
   return (
@@ -54,12 +27,7 @@ addDecorator(story => {
   )
 } );
 
-
-function loadStories() {
-  require('./_story');
-  require('../src/_icon.story');
-}
-
-setAddon(infoAddon);
-
-configure(loadStories, module);
+configure([
+  require.context('./', true, /_story.js/),
+  require.context('../src', true, /\.story\.js$/)
+], module);
