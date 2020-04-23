@@ -2,7 +2,9 @@
   "plugins": [
     "lodash",
     "@babel/plugin-transform-modules-commonjs",
-    "@babel/plugin-transform-runtime",
+    ["@babel/transform-runtime", {
+      "corejs": 3
+    }],
     "@babel/plugin-syntax-dynamic-import",
     "@babel/plugin-proposal-class-properties",
     [
@@ -24,7 +26,7 @@
       {
         "modules": false,
         "useBuiltIns": "entry",
-        "corejs": 2,
+        "corejs": 3,
         "targets": {
           "node": true,
           "browsers": [
