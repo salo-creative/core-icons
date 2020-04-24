@@ -1,4 +1,5 @@
 [
+{ "user": "Tim Stone", "version": "v1.4.2", "commit": "Login before yarn" },
 { "user": "Tim Stone", "version": "v1.4.1", "commit": "Fix failing build" },
 { "user": "Tim Stone", "version": "v1.4.0", "commit": "Bumped dependencies, use corejs 3" },
 { "user": "Tim Stone", "version": "v1.3.5", "commit": "Added bookmark and marker icons" },
