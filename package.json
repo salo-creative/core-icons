@@ -69,7 +69,6 @@
     "@babel/plugin-transform-runtime": "~7.9.0",
     "@babel/preset-env": "~7.9.0",
     "@babel/preset-react": "~7.9.4",
-    "@salo/auth": "^0.0.2",
     "@salo/core-ui": "^2.1.0",
     "@salo/icons": "^1.0.13",
     "@storybook/addon-actions": "~5.3.17",
@@ -121,6 +120,9 @@
     "styled-components": "~4.4.1",
     "url-loader": "~4.1.0",
     "webpack": "~4.43.0"
+  },
+  "optionalDependencies": {
+    "@salo/auth": "^0.0.2"
   },
   "peerDependencies": {
     "react": "^16.8.4",
