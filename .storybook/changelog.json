@@ -1,4 +1,5 @@
 [
+{ "user": "Tim Stone", "version": "v1.4.0", "commit": "Bumped dependencies, use corejs 3" },
 { "user": "Tim Stone", "version": "v1.3.5", "commit": "Added bookmark and marker icons" },
 { "user": "Tim Stone", "version": "v1.3.4", "commit": "Added grid icon" },
 { "user": "Tim Stone", "version": "v1.3.3", "commit": "Added petrol and gas icons" },
