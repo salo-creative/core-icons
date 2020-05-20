@@ -1,4 +1,5 @@
 [
+{ "user": "Tim Stone", "version": "v1.4.6", "commit": "Added ticket icon" },
 { "user": "Tim Stone", "version": "v1.4.5", "commit": "Added YouTube icon" },
 { "user": "Tim Stone", "version": "v1.4.4", "commit": "Added Vimeo" },
 { "user": "Tim Stone", "version": "v1.4.3", "commit": "Correct ci order" },
