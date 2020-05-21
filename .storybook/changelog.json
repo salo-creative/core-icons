@@ -1,4 +1,5 @@
 [
+{ "user": "Tim Stone", "version": "v1.4.7", "commit": "Added clipboard_text" },
 { "user": "Tim Stone", "version": "v1.4.6", "commit": "Added ticket icon" },
 { "user": "Tim Stone", "version": "v1.4.5", "commit": "Added YouTube icon" },
 { "user": "Tim Stone", "version": "v1.4.4", "commit": "Added Vimeo" },
