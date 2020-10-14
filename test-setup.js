@@ -3,7 +3,9 @@ import Adapter from 'enzyme-adapter-react-16';
 // add some helpful assertions
 import '@testing-library/jest-dom/extend-expect';
 
-Enzyme.configure({ adapter: new Adapter() });
+Enzyme.configure({
+  adapter: new Adapter()
+});
 
 console.error = jest.fn();
 console.warn = jest.fn();
@@ -14,5 +16,7 @@ beforeEach(() => {
 });
 
 beforeAll(() => {
-  global.webpackVars = { ENV: 'test' };
+  global.webpackVars = {
+    ENV: 'test'
+  };
 });
