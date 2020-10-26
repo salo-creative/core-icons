@@ -72,7 +72,7 @@
     "@salo/auth": "^0.0.2",
     "@salo/core-ui": "^2.1.0",
     "@salo/icons": "^1.0.13",
-    "@storybook/addon-actions": "~5.3.17",
+    "@storybook/addon-actions": "~6.0.27",
     "@storybook/addon-info": "~5.3.17",
     "@storybook/addon-jest": "~5.3.17",
     "@storybook/addon-knobs": "~5.3.17",
